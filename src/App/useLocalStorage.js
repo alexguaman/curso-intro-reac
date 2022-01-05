@@ -5,6 +5,13 @@ function useLocalStorage(itemName, initialValue) {
   const [error, setError] = React.useState(false);
   const [item, setItem] = React.useState(initialValue);
 
+//   const defaultTodos = [
+//   { text: 'Cortar cebolla', completed: true },
+//   { text: 'Tomar el cursso de intro a React', completed: false },
+//   { text: 'Llorar con la llorona', completed: true },
+//   { text: 'LALALALAA', completed: false },
+// ];
+
   React.useEffect(() => {
     setTimeout(() => {
       try {
@@ -23,7 +30,7 @@ function useLocalStorage(itemName, initialValue) {
       } catch (error) {
         setError(true);
       }
-    }, 1000);
+    }, 3000);
   }, []);
 
   const saveItem = (newItem) => {

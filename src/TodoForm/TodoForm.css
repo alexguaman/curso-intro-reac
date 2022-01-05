@@ -1,0 +1,50 @@
+.TodoForm-container {
+  display: flex; 
+  flex-direction: column;   
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fafafa;
+  gap: 20px;
+}
+
+.TodoForm-label {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.TodoForm-ta {
+    color: black;
+    height: 80px;
+    width: 240px;
+    font-size: 16px;
+  }
+
+.TodoForm-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.TodoForm-button{
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fafafa;
+  height: 30px;
+  width: 80px;
+}
+
+.TodoForm-button--add {
+    background-color: green;
+}
+
+.TodoForm-button--cancel {
+    background-color: grey;
+}
+
+
