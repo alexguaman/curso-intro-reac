@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/curso-intro-react/static/css/main.2e161dc3.chunk.css",
-    "main.js": "/curso-intro-react/static/js/main.385b8df7.chunk.js",
-    "main.js.map": "/curso-intro-react/static/js/main.385b8df7.chunk.js.map",
-    "runtime-main.js": "/curso-intro-react/static/js/runtime-main.f40afe30.js",
-    "runtime-main.js.map": "/curso-intro-react/static/js/runtime-main.f40afe30.js.map",
-    "static/js/2.970d1c2f.chunk.js": "/curso-intro-react/static/js/2.970d1c2f.chunk.js",
-    "static/js/2.970d1c2f.chunk.js.map": "/curso-intro-react/static/js/2.970d1c2f.chunk.js.map",
-    "index.html": "/curso-intro-react/index.html",
-    "static/css/main.2e161dc3.chunk.css.map": "/curso-intro-react/static/css/main.2e161dc3.chunk.css.map",
-    "static/js/2.970d1c2f.chunk.js.LICENSE.txt": "/curso-intro-react/static/js/2.970d1c2f.chunk.js.LICENSE.txt",
-    "static/media/check-circle-solid.e739b5ef.svg": "/curso-intro-react/static/media/check-circle-solid.e739b5ef.svg",
-    "static/media/times-circle-solid.a8186dc0.svg": "/curso-intro-react/static/media/times-circle-solid.a8186dc0.svg"
+    "main.css": "/curso-intro-reac/static/css/main.2e161dc3.chunk.css",
+    "main.js": "/curso-intro-reac/static/js/main.385b8df7.chunk.js",
+    "main.js.map": "/curso-intro-reac/static/js/main.385b8df7.chunk.js.map",
+    "runtime-main.js": "/curso-intro-reac/static/js/runtime-main.0b6d7acb.js",
+    "runtime-main.js.map": "/curso-intro-reac/static/js/runtime-main.0b6d7acb.js.map",
+    "static/js/2.970d1c2f.chunk.js": "/curso-intro-reac/static/js/2.970d1c2f.chunk.js",
+    "static/js/2.970d1c2f.chunk.js.map": "/curso-intro-reac/static/js/2.970d1c2f.chunk.js.map",
+    "index.html": "/curso-intro-reac/index.html",
+    "static/css/main.2e161dc3.chunk.css.map": "/curso-intro-reac/static/css/main.2e161dc3.chunk.css.map",
+    "static/js/2.970d1c2f.chunk.js.LICENSE.txt": "/curso-intro-reac/static/js/2.970d1c2f.chunk.js.LICENSE.txt",
+    "static/media/check-circle-solid.e739b5ef.svg": "/curso-intro-reac/static/media/check-circle-solid.e739b5ef.svg",
+    "static/media/times-circle-solid.a8186dc0.svg": "/curso-intro-reac/static/media/times-circle-solid.a8186dc0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f40afe30.js",
+    "static/js/runtime-main.0b6d7acb.js",
     "static/js/2.970d1c2f.chunk.js",
     "static/css/main.2e161dc3.chunk.css",
     "static/js/main.385b8df7.chunk.js"
