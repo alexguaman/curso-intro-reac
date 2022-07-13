@@ -1,17 +1,16 @@
-import React from "react";
-import useLocalStorage from "../App/useLocalStorage";
+import React from 'react';
+import useLocalStorage from './useLocalStorage';
 
-const TodoContext = React.createContext();
-
-function TodoProvider(props) {
+function useTodos() {
   const {
     item: todos,
     saveItem: saveTodos,
     loading,
     error,
-  } = useLocalStorage("TODOS_V1", []);
+    sincronizeItem: sincronizeTodos,
+  } = useLocalStorage('TODOS_V1', []);
 
-  const [searchValue, setSearchValue] = React.useState("");
+  const [searchValue, setSearchValue] = React.useState('');
   const [openModal, setOpenModal] = React.useState(false);
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
@@ -33,7 +32,7 @@ function TodoProvider(props) {
     const newTodos = [...todos];
     newTodos.push({
       text,
-      completed: false
+      completed: false,
     });
     saveTodos(newTodos);
   };
@@ -52,34 +51,30 @@ function TodoProvider(props) {
     saveTodos(newTodos);
   };
 
-  console.log("Antes del render");
+  console.log('Antes del render');
 
   React.useEffect(() => {
-    console.log("useeffect");
+    console.log('useeffect');
   }, [totalTodos]);
 
-  console.log("Despues del render");
+  console.log('Despues del render');
+  console.log('searchedTodos', searchedTodos);
 
-  return (
-    <TodoContext.Provider
-      value={{
-        loading,
-        error,
-        totalTodos,
-        completedTodos,
-        searchValue,
-        setSearchValue,
-        searchedTodos,
-        addTodo,
-        completeTodo,
-        deleteTodo,
-        openModal,
-        setOpenModal
-      }}
-    >
-      {props.children}
-    </TodoContext.Provider>
-  );
+  return {
+    loading,
+    error,
+    totalTodos,
+    completedTodos,
+    searchValue,
+    setSearchValue,
+    searchedTodos,
+    addTodo,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+    sincronizeTodos,
+  };
 }
 
-export { TodoContext, TodoProvider };
+export { useTodos };

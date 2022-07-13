@@ -2,8 +2,8 @@ import React from 'react';
 import { TodoIcon } from './';
 
 function CompleteIcon({ completed, onComplete }) {
-    console.log(completed);
-    console.log(onComplete);
+    // console.log(completed);
+    // console.log(onComplete);
   return (
     <TodoIcon
       type="check"

@@ -13,8 +13,8 @@ const iconTypes = {
 };
 
 function TodoIcon({ type, color = 'gray', onClick }) {
-  console.log('type', type);
-  console.log('iconTypes', iconTypes[type]);
+  // console.log('type', type);
+  // console.log('iconTypes', iconTypes[type]);
   return (
     <span
       className={`Icon-container Icon-container--${type}`}
