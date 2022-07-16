@@ -1,9 +1,9 @@
 import { Button, Drawer } from 'antd';
 import React from 'react';
-import { withStorageListener } from './withStorageListener';
+import { useStorageListener } from './useStorageListener';
 
-function ChangeAlert(props) {
-  const { show, toggleShow } = props;
+function ChangeAlert({ sincronize }) {  
+  const { show, toggleShow } = useStorageListener(sincronize);
   if (show) {
     return (
       <>
@@ -27,6 +27,4 @@ function ChangeAlert(props) {
   return null;
 }
 
-const ChangeAlertWithStorageListener = withStorageListener(ChangeAlert);
-
-export { ChangeAlertWithStorageListener };
+export { ChangeAlert };

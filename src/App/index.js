@@ -11,7 +11,7 @@ import { TodosLoading } from '../TodosLoading';
 import { EmptyTodos } from '../EmptyTodos';
 import { TodoHeader } from '../TodoHeader';
 import { useTodos } from './useTodos';
-import { ChangeAlertWithStorageListener } from '../ChangeAlert';
+import { ChangeAlert } from '../ChangeAlert';
 
 function App() {
   const {
@@ -78,7 +78,7 @@ function App() {
 
       <CreateTodoButton setOpenModal={setOpenModal} />
 
-      <ChangeAlertWithStorageListener sincronize = {sincronizeTodos} />
+      <ChangeAlert sincronize = {sincronizeTodos} />
     </React.Fragment>
   );
 }
